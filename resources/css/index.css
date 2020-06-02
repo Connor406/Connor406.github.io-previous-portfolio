@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Tuesday Night';
+  src: url(../Fonts/TuesdayNight-Regular.otf) format('truetype');
+}
+
+@media only screen and (max-width: 620px) {
+  .container {
+    margin: 250px 10px 10px 10px;
+    min-height: 1400px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Tuesday Night';
+  font-weight: 100;
+  display: inline-block;
+  text-shadow: 2px 4px 4px rgba(63, 28, 28, 0.1);
+  line-height: 1.9;
+}
+
+h1.last {
+  font-weight: 900;
+  padding-left: 10px;
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h5 {
+  font-weight: 100;
+  padding-top: 10px;
+}
+h6 {
+  padding-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.bgpic {
+  position: relative;
+  background-image: url(../IMG_train.jpg);
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bgpic:before {
+  position: absolute;
+  background-color: #eb564b;
+  opacity: .7;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bgpic * {
+  position: relative;
+}
+
+.title {
+  position: initial;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 40px;
+  height: 300px;
+  color: rgb(231, 214, 187);
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-between;
+  /*min-height: 100vh; */
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+/* GitHub card */
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: linear-gradient(#661a15, #eb564b);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 4px rgba(63, 28, 28, 0.1);
+}
+.container .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 214, 187, 0.9);
+  clip-path: circle(150px at 100% -35%);
+  transition: 0.7s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card .github{ 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  z-index: 1000;
+  width: 40%;
+  height: 40%;
+  transition: 0.5s;
+  background-position: center;
+}
+
+.cat {
+  padding-left: 10px;
+  width: 300px;
+  height: 300px;
+}
+.container .card:hover .github {
+  top: 10px;
+  transform: translateY(0%);
+  transform: translateX(30%);
+}
+
+.container .card .content-git {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  font-size: 2rem;
+  text-align: center;
+  transition: .8s;
+  z-index: 10;
+}
+.container .card:hover .content-git {
+  height: 100px;
+  transition-delay: 0.3s;
+}
+
+/*linkedin card */
+
+.container .card2 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: linear-gradient(#661a15, #eb564b);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 4px rgba(63, 28, 28, 0.1);
+}
+.container .card2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 214, 187, 0.9);
+  clip-path: circle(150px at 100% -35%);
+  transition: 0.7s ease-in-out;
+}
+
+.container .card2:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card2 .linkedin{ 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  z-index: 1000;
+  width: 40%;
+  height: 40%;
+  transition: 0.5s;
+  background-position: center;
+}
+
+.linked {
+  padding-left: 10px;
+  width: 300px;
+  height: 300px;
+}
+.container .card2:hover .content-linked {
+  height: 100px;
+  transition-delay: 0.3s;
+}
+
+.container .card2:hover .linkedin {
+  top: 10px;
+  transform: translateY(0%);
+  transform: translateX(30%);
+}
+
+.container .card2 .content-linked {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  font-size: 2rem;
+  text-align: center;
+  transition: .8s;
+  z-index: 10;
+}
+
+.container .card2:hover .content-linked {
+  height: 100px;
+  transition-delay: 0.3s;
+}
+
+/* Resume card */
+
+.container .card3 {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: linear-gradient(#661a15, #eb564b);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 2px 3px 4px rgba(63, 28, 28, 0.1);
+}
+.container .card3:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 214, 187, 0.9);
+  clip-path: circle(150px at 100% -35%);
+  transition: 0.7s ease-in-out;
+}
+
+.container .card3:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card3 .resume{ 
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  z-index: 1000;
+  width: 40%;
+  height: 40%;
+  transition: 0.5s;
+  background-position: center;
+}
+
+.cv {
+  padding-left: 10px;
+  width: 300px;
+  height: 300px;
+}
+.container .card3:hover .content-resume {
+  height: 100px;
+  transition-delay: 0.3s;
+}
+
+.container .card3:hover .resume {
+  top: 10px;
+  transform: translateY(0%);
+  transform: translateX(30%);
+}
+
+.container .card3 .content-resume {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  font-size: 2rem;
+  text-align: center;
+  transition: .8s;
+  z-index: 10;
+}
+
+.container .card3:hover .content-resume {
+  height: 100px;
+  transition-delay: 0.3s;
+}
