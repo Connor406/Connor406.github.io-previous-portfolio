@@ -2,11 +2,34 @@
 <html>
 <head>
   <title>Connor</title><title class='last'>Mahan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./resources/css/index.css" type="text/css"
-  rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="./resources/css/index.css" type="text/css"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js'></script>
+    
+    <script id='templateHB' type='text/x-handlebars-template'>
+      {{#each projects}}
+          <div class='card'>
+            <div class='pic-link'>
+              <img src='{{this.image}}' class='picture'>
+            </div>
+          <div class='content'>
+            <a href='{{this.code}}' target="_blank">
+              <h4>View Code</h4>
+            </a>
+          </div>
+          {{#if app}}
+          <div class='content-app'>
+            <a href='{{this.app}}' target="_blank" >
+              <h4>View App</h4>
+            </a>
+          </div>
+        </div>
+          {{/if}}
+      {{/each}}
+
+    </script>
 </head>
 <body>
     <div class='bgpic'>
@@ -19,36 +42,46 @@
       <div class='container'>
         <a href='https://github.com/Connor406' target="_blank" >
         <div class='card'>
-          <div class='github'>
-            <img src='./resources/github-mark.png' class='cat'>
+          <div class='pic-link'>
+            <img src='./resources/github-mark.png' class='picture'>
           </div>
-          <div class='content-git'>
+          <div class='content'>
             <h2>GitHub</h2>
           </div>
         </div>
 
         <a href='https://www.linkedin.com/in/connor-mahan406/' target="_blank" >
-        <div class='card2'>
-          <div class='linkedin'>
-            <img src='./resources/linkedin.png' class='linked'>
+        <div class='card'>
+          <div class='pic-link'>
+            <img src='./resources/linkedin.png' class='picture'>
           </div>
-          <div class='content-linked'>
+          <div class='content'>
             <h2>LinkedIn</h2>
           </div>
         </div>
         </a>
 
-        <a href='./resources/Connor Mahan -- Resume.pdf' target="_blank" >
-        <div class='card3'>
-          <div class='resume'>
-            <img src='./resources/resumepic.png' class='cv'>
+        <a href='./resources/resume.pdf' target="_blank" >
+        <div class='card'>
+          <div class='pic-link'>
+            <img src='./resources/resumepic.png' class='picture'>
           </div>
-          <div class='content-resume'>
+          <div class='content'>
           <h2>Resume</h2>
+          </div>
         </div>
+        </a>
       </div>
-      </a>
-    </div>
+
+      <div class='project-title'>
+        <h1 id='projects'>Projects</h1>
+      </div>
+
+      
+      <article class = 'container' id='project-container'>
+      </article>
+
   </div>
+  <script src='./resources/scripts/script.js'></script>
 </body>
 </html>
