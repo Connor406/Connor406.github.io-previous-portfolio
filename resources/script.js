@@ -7,7 +7,7 @@ const project = {
         app: 'https://connor406.github.io/Bingo/'
     },
     {
-        image: "./pages/pine.jpg",
+        image: "./pine.jpg",
         name: 'Login Page',
         code: 'https://github.com/Connor406/Connor406-LoginPage.github.io',
         app: 'https://connor406.github.io/Connor406-LoginPage.github.io/'
