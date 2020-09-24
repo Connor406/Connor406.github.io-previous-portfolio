@@ -1,16 +1,16 @@
 const project = {
     projects: [
     {
-        image: './resources/bingo.jpeg',
-        name: 'Bingo App',
-        code: 'https://github.com/Connor406/Bingo',
-        app: 'https://connor406.github.io/Bingo/'
+        image: "./resources/EmCapo.jpg",
+        name: 'Wedding Page',
+        code: 'https://github.com/Connor406/wedding-scrinzi',
+        app: 'https://connor406.github.io/wedding-scrinzi/'
     },
     {
-        image: "./resources/pine.jpg",
-        name: 'Login Page',
-        code: 'https://github.com/Connor406/Connor406-LoginPage.github.io',
-        app: 'https://connor406.github.io/Connor406-LoginPage.github.io/'
+        image: "./resources/nelp.jpg",
+        name: 'Nelp App',
+        code: 'https://github.com/Connor406/nelp',
+        app: 'https://connor406.github.io/nelp/'
     },
     {
         image: './resources/IMG_3589.jpg',
